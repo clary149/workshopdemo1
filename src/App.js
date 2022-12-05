@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', marginTop: '50px'}}>
+      <button onClick={()=>{alert()}}>Click me!</button>
+
+      <input type="checkbox"/>
+
+      <input type="radio"/>
+
+      <select>
+        <option>
+          one
+        </option>
+
+        <option>
+          two
+        </option>
+
+        <option>
+          three
+        </option>
+      </select>
+
+      <input></input>
+
+      <textarea></textarea>
     </div>
   );
 }
